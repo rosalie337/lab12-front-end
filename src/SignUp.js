@@ -10,7 +10,7 @@ export default class SignUp extends Component {
 
     // addHandleSubmit
 
-        
+
     render() {
         return (
             <div>
@@ -27,7 +27,7 @@ export default class SignUp extends Component {
                     this.state.loading
                     ? 'LOADING!!!'
                 :<button>
-                    Sign-up!
+                    Sign Up
                 </button>
                 }
                 </form>  
