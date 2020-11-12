@@ -24,7 +24,7 @@ export default class Login extends Component {
     render() {
         return (
             <div>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                 <label>
                     Email:
                     <input onChange={(e) => this.state({ email: e.target.value})} value={this.state.email}/>
