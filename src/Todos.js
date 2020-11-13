@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import request from 'superagent';
 
 
-export default class Todo extends Component {
+export default class Todos extends Component {
     state = {
         todos: [],
         todo: '',
