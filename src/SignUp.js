@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import request from 'superagent';
 
 export default class SignUp extends Component {
-
     state = {
         email: '',
         password: '',
@@ -33,7 +32,7 @@ export default class SignUp extends Component {
                 <form onSubmit={this.handleSubmit}>
                 <label>
                     Email:
-                    <input onChange={(e) => this.state({ email: e.target.value})} value={this.state.email}/>
+                    <input onChange={(e) => this.setState({ email: e.target.value})} value={this.state.email}/>
                 </label>
                 <label>
                     Password:

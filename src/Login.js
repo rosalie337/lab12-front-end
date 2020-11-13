@@ -18,21 +18,26 @@ export default class Login extends Component {
 
         this.setState({ loading: false })
 
+        this.props.changeTokenAndUsername(user.body.email, user.body.token);
+
         this.props.history.push('/todos');
     }
 
     render() {
         return (
             <div>
-                <h2>Log in</h2>
+                <h2>Login</h2>
                 <form onSubmit={this.handleSubmit}>
                 <label>
                     Email:
-                    <input onChange={(e) => this.state({ email: e.target.value})} value={this.state.email}/>
+                    <input 
+                    onChange={(e) => this.setState({ email: e.target.value})} 
+                    value={this.state.email}/>
                 </label>
                 <label>
                     Password:
-                    <input onChange={(e) => this.setState({ password: e.target.value})} value={this.state.password} type="password"/>
+                    <input onChange={(e) => this.setState({ password: e.target.value})}
+                    value={this.state.password} type="password"/>
                 </label>
                 {
                     this.state.loading
