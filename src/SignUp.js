@@ -32,11 +32,15 @@ export default class SignUp extends Component {
                 <form onSubmit={this.handleSubmit}>
                 <label>
                     Email:
-                    <input onChange={(e) => this.setState({ email: e.target.value})} value={this.state.email}/>
+                    <input 
+                    onChange={(e) => this.setState({ email: e.target.value})} 
+                    value={this.state.email}/>
                 </label>
                 <label>
                     Password:
-                    <input onChange={(e) => this.setState({ password: e.target.value})} value={this.state.password} type="password"/>
+                    <input 
+                    onChange={(e) => this.setState({ password: e.target.value})} 
+                    value={this.state.password} type="password"/>
                 </label>
                 {
                     this.state.loading

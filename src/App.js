@@ -8,6 +8,7 @@ import {
 import Login from './Login.js'
 import SignUp from './SignUp.js'
 import Home from './Home.js'
+import Todos from './Todos.js'
 import PrivateRoute from './PrivateRoute.js'
 import './App.css'
 
