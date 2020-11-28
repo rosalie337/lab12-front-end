@@ -7,7 +7,7 @@ export default class Todos extends Component {
         completed: false,
         loading: false
     }
-    
+
     componentWillMount = async () => {
         await this.fetchTodos()
     }
@@ -46,7 +46,6 @@ export default class Todos extends Component {
     render() {
         const {
             todo,
-            completed, // this value is declared but never used
             loading,
             todos,
         } = this.state;
